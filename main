@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kiss Counter</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #ffe6ec;
+    }
+    button {
+      font-size: 30px;
+      padding: 20px 40px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      background: #ff4d6d;
+      color: white;
+    }
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>💋 Kiss Counter</h1>
+  <button onclick="increment()">Send a Kiss 💋</button>
+  <p id="count">Kisses: 0</p>
+
+  <script>
+    let count = 0;
+    function increment() {
+      count++;
+      document.getElementById('count').innerText = "Kisses: " + count;
+    }
+  </script>
+</body>
+</html>
